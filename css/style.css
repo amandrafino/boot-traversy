@@ -3,6 +3,14 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.headline{
+  letter-spacing: 3px;
+}
+
+.lead {
+  letter-spacing: 0.5px;
+}
+
 @media (min-width: 768px) {
   .news-input {
     width: 50%;
