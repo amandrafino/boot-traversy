@@ -22,6 +22,12 @@ body::before {
   color: #fff;
 }
 
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   
   .news-input {

@@ -12,6 +12,9 @@
   <title>Vigorous Life</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -299,9 +302,55 @@
         </div>
       </div>
     </div><!-- End Container -->
-  </section>
+    </section>
+
+    <!-- Contact&Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location</span>
+                42 Salisbury Road, Watertown MA 02472
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span>
+                phone#
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Phone:</span>
+                phone#
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span>
+                email address
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Student Email</span>
+                email address
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div><!-- End Row -->
+      </div><!-- End Container -->
+    </section><!-- End Section -->
 
   <!-- Script -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbmRyYWZpbm8iLCJhIjoiY2t4OWwxa21iMDA5bDJ0bWZwNWx5NjVuaiJ9.26LQhencBqf9x3Nqg874MQ';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-71.1588869, 42.3747169],
+  zoom: 18
+  });
+  </script>  
 </body>
 </html>
