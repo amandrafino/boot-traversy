@@ -2,6 +2,11 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
+body::before {
+  display: block;
+  content: "";
+  height: 70px;
+}
 
 .headline{
   letter-spacing: 3px;
@@ -11,7 +16,14 @@ body {
   letter-spacing: 0.5px;
 }
 
+.albert::before {
+  content: "Be Brave  ";
+  font-size: 1.25rem;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
+  
   .news-input {
     width: 50%;
   }
