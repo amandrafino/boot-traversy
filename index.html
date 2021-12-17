@@ -350,6 +350,51 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+  <!-- Modal -->
+  <!-- see btn:showcase for data-bs-toggle & data-bs-target -->
+  <div class="modal fade" id="disconnect" tabindex="-1" aria-labelledby="disconnectLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="disconnectLabel">Change Your Life Now</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- create a form here for model -->
+          <p class="lead">Populate this form. We'll get back to you.</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name">
+
+              <label for="last-name" class="col-form-label">
+                Last Name:
+              </label>
+              <input type="text" class="form-control" id="Last-name">
+
+              <label for="email" class="col-form-label">
+                Email:
+              </label>
+              <input type="text" class="form-control" id="email">
+
+              <label for="phone" class="col-form-label">
+                Phone number:
+              </label>
+              <input type="text" class="form-control" id="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Script -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
